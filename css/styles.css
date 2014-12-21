@@ -1,0 +1,8 @@
+.intro-header {
+	background: url(../img/cleve_ns.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+ 	background-position-y: 0;
+}
