@@ -1,5 +1,6 @@
-Cleveland
-=========
+![Nodeshool Cleveland Logo](https://cdn.rawgit.com/nodeschool/cleveland/gh-pages/img/CLELOGO.svg)
+NodeSchool Cleveland
+===================
 
 ## Contact
 
