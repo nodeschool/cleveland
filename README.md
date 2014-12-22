@@ -20,3 +20,6 @@ Website coming soon...
 - When you have made the changes push the branch to github (git push origin my_issue#21)
 - Create a pull request
 - The pull request will be reviewed, merged into gh-pages or some feedback about improvements will be given
+
+## Thanks
+Huge thanks to local artist Kaetlyn McCafferty for here amazing work on the logo
