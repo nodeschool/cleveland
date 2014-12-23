@@ -22,4 +22,4 @@ Website coming soon...
 - The pull request will be reviewed, merged into gh-pages or some feedback about improvements will be given
 
 ## Thanks
-Huge thanks to local artist Kaetlyn McCafferty for here amazing work on the logo
+Huge thanks to local artist Kaetlyn McCafferty for her amazing work on the logo
