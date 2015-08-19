@@ -1,101 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: page
+title: NodeSchool Cleveland
+---
+        <div class="info">
+            <div class="description">
+                <p>{{site.name}} is part of the global <a href="http://nodeschool.io/">NodeSchool</a> effort to voluntarily teach Node.js to anyone! The source code for the workshops is completely open source and the effort is entirely community driven. And the best part is, it's all free!</p>
+            </div>
 
-<head>
+            <div class="additional-info">
+                <h2><a name="events">Events</a></h2>
+                <hr>
+                <div class="icons-inline">
+                    <a href="http://www.meetup.com/{{site.meetup}}/"><img class="icon" src="{{site.url}}/img/meetup.png"></a>
+                </div>
+                    <p>The NodeSchool meetings are working sessions, so <strong>please bring a laptop</strong>. <a href="/mentors">Mentors</a> will be available to help if you're just getting started with Node, or even if you're a seasoned veteran and want to learn more.</p>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+                <h3>Upcoming Events</h3>
+                <!-- Could be replaced with posts with future dates -->
+                <div class="next-event">No upcoming event scheduled, please check back later!</div>
 
-    <title>NodeSchool Cleveland</title>
+                <h3>News & Past Events</h3>
+                <ul>
+                    {% for post in site.posts %}
+                      <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="additional-info">
+                <h2><a name="contact">Contact</a></h2>
+                <hr>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-<body>
-
-    <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <img id="ns-cle-logo" src="img/CLELOGO.svg">
-                        <hr class="small">
-                        <span class="subheading">Site under construction</span>
+                <div class="icons">
+                    <div class="extended">
+                        <a href="https://github.com/nodeschool/{{site.repo}}/issues">
+                            <div>
+                                <img class="github icon" src="{{site.url}}/img/github.png">
+                            </div>
+                            <div>
+                                Issues List
+                            </div>
+                        </a>
+                    </div>
+                    <div class="extended">
+                        <a href="https://gitter.im/nodeschool/{{site.repo}}">
+                            <div>
+                                <img class="gitter icon" src="{{site.url}}/img/gitter-icon.png">
+                            </div>
+                            <div>
+                                Gitter Chat
+                            </div>
+                        </a>
+                    </div>
+                    <div class="extended">
+                        <a href="https://twitter.com/{{site.twitter}}">
+                            <div>
+                                <img class="twitter icon" src="{{site.url}}/img/twitter.png">
+                            </div>
+                            <div>
+                                @{{site.twitter}}
+                            </div>
+                        </a>
                     </div>
                 </div>
+
+                <p>Feel free to reach out to either of our organizers(<a href='https://twitter.com/mckee_kyle'>@mckee_kyle</a>, 
+                <a href="https://twitter.com/kwpeters">@kwpeters</a>) if you have questions.</p>
+
+                <p>Want to help? Add your name to our <a href="https://github.com/nodeschool/{{site.repo}}/blob/gh-pages/mentors.md">mentors list</a>! (Please let us know if you need access to the <a href="https://github.com/orgs/nodeschool/teams/{{site.repo}}"> NodeSchool team</a>.)</p>
+
+                <p>Want to sponsor? We're very grateful for our sponsors, please let us know if you or your company would like to help!</p>
+            </div>
+            <div class="additional-info">
+                <h2><a name="getting-started">Getting Started</a></h2>
+                <hr>
+
+                <h3>Installing Node</h3>
+                <p>When installing Node through the default install binaries, the install path (on a Mac or Unix machine) is within a directory that requires root permission. This can lead to having to run <code>sudo</code> when interacting with Node. Because of this, we recommend using <a href="https://github.com/creationix/nvm">nvm</a> when installing Node, since it will install Node into your user's home directory (avoiding any permissions problems).</p>
+
+                <h3>Node</h3>
+                <p>Once Node is installed, familiarize yourself with the Node environment using the links below:</p>
+                <ul>
+                    <li>Node API documentation: <a href="http://nodejs.org/api/">http://nodejs.org/api</a></li>
+                    <li>npm (Node's package manager): <a href="https://www.npmjs.org/">https://www.npmjs.org</a></li>
+                    <li>Mozilla Developer Network (JavaScript documentation): <a href="https://developer.mozilla.org/en-US/">https://developer.mozilla.org/en-US</a></li>
+                </ul>
+
+                <h3>NodeSchool</h3>
+                <p>If this is your first time using NodeSchool, try some of the core workshops. Make sure to <a href="#events">attend a local event</a>!</p>
+                <ul>
+                    <li>NodeSchool official site: <a href="http://nodeschool.io/">http://nodeschool.io</a></li>
+                    <li>Workshops: <a href="http://nodeschool.io/#workshopper-list">http://nodeschool.io/#workshopper-list</a></li>
+                </ul>
+            </div>
+            <div class="additional-info">
+                <h2><a name="additional-resources">Additional Resources</a></h2>
+                <hr>
+                <p>If you're stuck on anything NodeSchool, or Node in general, please feel free to <a href="#contact">contact us</a>.</p>
+
+                <ul>
+                    <li>{{site.name}} GitHub site: <a href="https://github.com/nodeschool/{{site.repo}}">https://github.com/nodeschool/{{site.repo}}</a></li>
+                    <li>Global NodeSchool GitHub issues (contains a long history of questions and answers about NodeSchool): <a href="https://github.com/nodeschool/discussions/issues">https://github.com/nodeschool/discussions/issues</a></li>
+                    <li>NodeUp Podcast discussing NodeSchool: <a href="http://nodeup.com/fiftyfive">http://nodeup.com/fiftyfive</a></li>
+                    <li>Teach Your Way to Becoming a Better Programmer (via NodeSchool): <a href="https://medium.com/social-tables-tech/teach-your-way-to-becoming-a-better-programmer-135c6aca5968">https://medium.com/social-tables-tech/teach-your-way-to-becoming-a-better-programmer-135c6aca5968</a></li>
+                </ul>
             </div>
         </div>
-    </header>
+    </section>
 
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-preview">
-                        <h1 class="post-title">
-                            Events Coming soon
-                        </h1>
-                        <h3 class="post-subtitle">
-                            Watch this space...
-                        </h3>
-                    <p class="post-meta">Posted by <a href="#">jackvial</a> on December 14, 2014</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <hr>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="https://github.com/nodeschool/cleveland">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
-
-</body>
-
-</html>
+    <script src="js/app.js"></script>
