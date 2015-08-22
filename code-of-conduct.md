@@ -28,9 +28,9 @@ please contact an organizer immediately.
 ### **Cleveland**
 
 * Organizers:
-    * Kyle:     [http://twitter.com/mckee_kylehttp://twitter.com/gyaresu](http://twitter.com/mckee_kyle)
-    * Kevin:    [https://twitter.com/kevwpeters](https://twitter.com/kevwpeters)
-    * Mike:     [https://twitter.com/mohlsen](https://twitter.com/mohlsen)
+    * [Kyle](http://twitter.com/mckee_kyle)
+    * [Kevin](https://twitter.com/kevwpeters)
+    * [Mike](https://twitter.com/mohlsen)
 * Meetup URL: **[http://www.meetup.com/cleveland-nodeschool](http://www.meetup.com/cleveland-nodeschool)**
 
 **If you have questions or feedback about this Code of Conduct please contact
