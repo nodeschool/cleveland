@@ -47,7 +47,7 @@ code {
     margin: 2em 4em 1.5em;
 }
 .main .title {
-    background: url(../img/cleve_ns.jpg) no-repeat center center fixed;
+    background: url(../img/cleve_ns.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
