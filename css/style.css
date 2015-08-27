@@ -46,15 +46,33 @@ code {
 .main .title hr {
     margin: 2em 4em 1.5em;
 }
-.main .title {
-    background: url(../img/cleve_ns.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position-y: 0;
-    margin-bottom: 50px;
+
+@media (max-width: 749px) {
+    .main .title {
+        background-image: url(../img/cleve_ns.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin-bottom: 50px;
+    }
 }
+
+
+@media (min-width: 750px) {
+    .main .title {
+        background-image: url(../img/cleve_ns.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-position-y: 0;
+        background-size: contain;
+        margin-bottom: 50px;
+    }
+}
+
 
 .main .title h1 {
     color: #FFF;
