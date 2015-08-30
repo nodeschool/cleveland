@@ -12,7 +12,7 @@ function getRecentMeet(response) {
         nextEventId = nextEvent.id;
         nextEventName = nextEvent.name;
         nextEventDiv = document.querySelector(".next-event");
-        nextEventDiv.innerHTML = "<a href='{{http://www.meetup.com/{{site.meetup}}/events/}}" + nextEventId + "'>" + nextEventName + "</a>";
+        nextEventDiv.innerHTML = "<a href='http://www.meetup.com/{{site.meetup}}/events/" + nextEventId + "'>" + nextEventName + "</a>";
     }
 }
 
