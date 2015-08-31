@@ -1,5 +1,5 @@
-<div style="text-align=center">
-  <img src="img/cle_logo.png" alt="NodeShool Cleveland">
+<div style="text-align:center">
+  <img src="img/cle_logo.png" alt="NodeShool Cleveland" style="max-height:250px">
   <h1>NodeSchool Cleveland</h1>
 </div>
 
